@@ -38,10 +38,10 @@ def imageToBinary(file):
 
     
 # load the original image
-myFileList = createFileList('kulitan/')
+myFileList = createFileList('test')
 
 print(myFileList)
-with open("img_pixels.csv", 'w', newline='') as f:
+with open("test.csv", 'a', newline='') as f:
     writer = csv.writer(f)
     
     for file in myFileList:
